@@ -19,7 +19,7 @@ function AddTodo({isAuthenticated, setIsAuthenticated}) {
     e.preventDefault();
 
     try {
-      await axios.post('http://34.236.77.248:3001/api/todo', {title, targetDate}, {
+      await axios.post('http://dubok-viktoria-blue-green-lb-1106310170.us-east-1.elb.amazonaws.com/api/todo', {title, targetDate}, {
         headers: {
           'Authorization': `Bearer ${sessionStorage.getItem('token')}`,
         }
